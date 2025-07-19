@@ -1,0 +1,565 @@
+/*
+	Theme: She Cares;
+	Author: Michael Chan;
+	Date of Creation: Thur, July 10, 2025;
+	Colors: Flat UI, Swedish Palette;
+*/
+
+/* all pages */
+	*
+	{
+		font-size: 13px;
+		scroll-behavior: smooth;
+		box-sizing: border-box;
+	}
+/* all pages end */
+
+/* header */
+	.header-cover
+	{
+		background-color: white;
+		color: #ef5777;
+		position: fixed;
+		z-index: 3;
+		width: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo a
+	{
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	header .logo a img
+	{
+		height: 80px;
+		object-fit: cover;
+		margin-right: 10px;
+	}
+
+	header .logo a text
+	{
+		font-size: 2rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	header .logo a text:hover
+	{
+		color: black;
+	}
+
+	navbar
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	navbar a
+	{
+		text-decoration: none;
+		color: inherit;
+		margin-right: 50px;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	navbar a:hover
+	{
+		color: black;
+	}
+
+	.checkbtn
+	{
+		color: #ef5777;
+		cursor: pointer;
+		display: none;
+	}
+
+	.checkbtn i
+	{
+		font-size: 30px;
+	}
+
+	#check
+	{
+		display: none;
+	}
+/* header ends */
+
+/* banner */
+	.banner-container
+	{
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.banner
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+		z-index: 0;
+	}
+
+	.banner.active
+	{
+		opacity: 1;
+		z-index: 1;
+	}
+
+	.banner::before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	.banner-content
+	{
+		color: white;
+		position: relative;
+		padding: 250px;
+		z-index: 2;
+	}
+
+	.banner-content h1
+	{
+		font-size: 5rem;
+		font-weight: 800;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+		margin-bottom: 20px;
+	}
+
+	.banner-content h2
+	{
+		font-size: 1.5rem;
+		font-weight: 800;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+/* banner ends */
+
+/* skin care */
+	.skin-care
+	{
+		padding: 50px;
+	}
+
+	.section-title
+	{
+		font-size: 1.5rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		border-bottom: 5px solid #ef5777;
+		width: fit-content;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.skin-care-container
+	{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 20px;
+	}
+
+	.skin-care-box
+	{
+		background-color: #ececec;
+	}
+
+	.skin-care-box:hover
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.skin-care-box img
+	{
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+
+	.skin-care-info
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-top: 8px solid white;
+		padding: 0.5rem 1rem;
+	}
+
+	.skin-care-info .name 
+	{
+  		font-weight: 800;
+  		color: #333;
+	}
+
+	.skin-care-info .price 
+	{
+  		color: #ef5777;
+  		font-weight: 800;
+  		margin: 0 1rem;
+	}
+
+	.skin-care-info button 
+	{
+  		background-color: #ef5777;
+  		color: white;
+  		border: none;
+  		padding: 0.4rem 0.8rem;
+  		font-size: 0.9rem;
+  		font-weight: 800;
+  		border-radius: 4px;
+  		cursor: pointer;
+  		transition: background-color 0.3s ease;
+  		margin-top: 5px;
+  		margin-bottom: 5px;
+	}
+
+	.skin-care-info button:hover 
+	{
+  		background-color: #d94b68;
+	}
+/* skin care ends */
+
+/* beauty */
+	.beauty
+	{
+		padding: 50px;
+		background-color: #ececec;
+	}
+
+	.beauty-container
+	{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 20px;
+	}
+
+	.beauty-box
+	{
+		background-color: white;
+	}
+
+	.beauty-box:hover
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.beauty-box img
+	{
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+
+	.beauty-info
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-top: 8px solid #ececec;
+		padding: 0.5rem 1rem;
+	}
+
+	.beauty-info .name 
+	{
+  		font-weight: 800;
+  		color: #333;
+	}
+
+	.beauty-info .price 
+	{
+  		color: #ef5777;
+  		font-weight: 800;
+  		margin: 0 1rem;
+	}
+
+	.beauty-info button 
+	{
+  		background-color: #ef5777;
+  		color: white;
+  		border: none;
+  		padding: 0.4rem 0.8rem;
+  		font-size: 0.9rem;
+  		font-weight: 800;
+  		border-radius: 4px;
+  		cursor: pointer;
+  		transition: background-color 0.3s ease;
+  		margin-top: 5px;
+  		margin-bottom: 5px;
+	}
+
+	.beauty-info button:hover 
+	{
+  		background-color: #d94b68;
+	}
+/* beauty ends */
+
+/* guarantee */
+	.guarantee-box
+	{
+		display: flex;
+		align-items: center;
+		font-size: 2rem;
+		font-weight: 800;
+		color: #ef5777;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	.guarantee-box img
+	{
+		width: 30%;
+	}
+/* guarantee ends */
+
+/* footer */
+	.footer-cover
+	{
+		background-color: #ef5777;
+		color: white;
+		padding: 50px;
+	}
+
+	.footer-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.footer-title
+	{
+		font-size: 1.5rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		margin-bottom: 10px;
+	}
+
+	.footer-box.con span
+	{
+		display: flex;
+		align-items: center;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	}
+
+	.footer-box.con span img
+	{
+		width: 40px;
+		height: 40px;
+		object-fit: cover;
+		margin-right: 5px;
+	}
+
+	.footer-box.con span a
+	{
+		text-decoration: none;
+		color: white;
+	}
+
+	footer
+	{
+		text-align: center;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	}
+/* footer ends */
+
+/* page responsiveness */
+	@media (max-width: 768px)
+	{
+		/* header */
+			.checkbtn
+			{
+				display: block;
+				order: 1;
+			}
+
+			header navbar
+			{
+				position: fixed;
+				top: 120px;
+				right: -100%;
+				width: 20%;
+				height: 50vh;
+				display: flex;
+				flex-direction: column;
+				background-color: white;
+				justify-content: center;
+				align-items: flex-end;
+				padding-right: 30px;
+			}
+
+			header navbar a
+			{
+				margin: 10px 0;
+			}
+
+			#check:checked ~ navbar
+			{
+				right: 0;
+			}
+		/* header ends */
+
+		/* banner */
+			.banner-content h1
+			{
+				font-size: 2.5rem;
+			}
+
+			.banner-content h2
+			{
+				font-size: 1rem;
+			}
+		/* banner ends */
+
+		/* skin care */
+			.skin-care-container
+			{
+				grid-template-columns: repeat(4, 1fr);
+			}
+		/* skin care ends */
+
+		/* beauty */
+			.beauty-container
+			{
+				grid-template-columns: repeat(4, 1fr);
+			}
+		/* beauty ends */
+
+		/* guarantee */
+			.guarantee-box
+			{
+				font-size: 1.5rem;
+			}
+		/* guarantee ends */
+	}
+
+	@media (max-width: 425px)
+	{
+		/* header */
+			header .logo a img
+			{
+				height: 60px;
+			}
+
+			header .logo a text
+			{
+				font-size: 1.5rem;
+			}
+
+			.checkbtn i
+			{
+				font-size: 25px;
+				margin-right: 20px;
+			}
+
+			header navbar
+			{
+				width: 30%;
+				height: 40vh;
+			}
+		/* header ends */
+
+		/* banner */
+			.banner-content h1
+			{
+				font-size: 2rem;
+			}
+
+			.banner-content h2
+			{
+				font-size: 1rem;
+			}
+		/* banner ends */
+
+		/* skin care */
+			.skin-care
+			{
+				padding: 20px;
+			}
+
+			.skin-care-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+		/* skin care ends */
+
+		/* beauty */
+			.beauty
+			{
+				padding: 20px;
+			}
+
+			.beauty-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+		/* beauty ends */
+
+		/* guarantee */
+			.guarantee-box
+			{
+				font-size: 0.8rem;
+			}
+		/* guarantee ends */
+
+		/* footer */
+			.footer-cover
+			{
+				padding: 20px;
+			}
+
+			.footer-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.footer-box.con span img
+			{
+				width: 30px;
+				height: 30px;
+			}
+		/* footer ends */
+	}
+
+	@media (max-width: 320px)
+	{
+		/* header */
+			header .logo a text
+			{
+				font-size: 1.2rem;
+			}
+
+			header navbar
+			{
+				width: 40%;
+			}
+		/* header ends */
+	}
+/* page responsiveness ends */
