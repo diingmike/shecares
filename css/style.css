@@ -11,17 +11,17 @@
 		font-size: 13px;
 		scroll-behavior: smooth;
 		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
+		/* margin: 0;
+		padding: 0; */
 	}
 
-	html, body
+	/* html, body
 	{
 		width: 100%;
 	  	overflow-x: hidden;
-	}
+	} */
 
-	.container
+	/* .container
 	{
 	  	width: 100%;
 	  	max-width: 1200px;
@@ -30,7 +30,7 @@
 	  	padding-left: 15px;
 	  	padding-right: 15px;
 	  	box-sizing: border-box;
-	}
+	} */
 
 /* all pages end */
 
@@ -1030,4 +1030,5 @@
 			}
 		/* checkout ends */
 	}
+
 /* page responsiveness ends */
