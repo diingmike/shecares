@@ -24,7 +24,7 @@
 
 	<body style = "background-color: white; color: black;">
 		<!--header-->
-			<section class = "header-cover">
+			<section class = "header">
 				<div class = "container">
 					<header>
 						<input type = "checkbox" id = "check" />
@@ -32,19 +32,22 @@
 							<i class = "fas fa-bars"></i>
 						</label>
 
-						<div class = "logo">
-							<a href = "index.html">
-								<img src = "images/logo.png" alt = "She Cares Logo" />
-								<text> She Cares </text>
-							</a>
-						</div>
+						<a href = "index.html">
+							<div class = "logo">
+								<img src = "images/logo.png" alt = "logo" />
+								<span> She Cares </span>
+							</div>
+						</a>
 
 						<navbar>
 							<a href = "index.html"> Home </a>
 							<a href = "index.html#products"> Shop </a>
-							<a href = "about.html#about"> About </a>
-							<a href = "index.html#contact"> Contact </a>
-							<a href = "cart.html"> 🛒 </a>
+							<a href = "about.html"> About </a>
+							<a href = "contact.html"> Contact </a>
+							<a href = "cart.html" class = "cart-icon"> 
+								🛒 
+								<span class = "cart-count"> 2 </span>
+							</a>
 						</navbar>
 					</header>
 				</div>
@@ -52,25 +55,18 @@
 		<!--header ends-->
 
 		<!--banner-->
-			<section class = "banner-container">
-				<div class = "banner active" style = "background-image: url('images/real-banner.png');">
-					<div class = "container banner-content">
+			<section class = "banner">
+				<div class = "container">
+					<div class = "banner-text">
 						<h1> She Cares <br/> & So She Glows </h1>
 						<h2> Serving high quality skin care & beauty products </h2>
-					</div>
-				</div>
-
-				<div class = "banner" style = "background-image: url('images/real-banner.png');">
-					<div class = "container banner-content">
-						<h1> For Her & Her's </h1>
-						<h2> Tried & tested for best results </h2>
 					</div>
 				</div>
 			</section>
 		<!--banner ends-->
 
 		<!--skin care-->
-			<section class = "skin-care">
+			<section class = "skin-care" id = "products">
 				<div class = "container">
 					<h1 class = "section-title"> Skin Care Products </h1>
 
@@ -80,7 +76,7 @@
 
 							<div class = "skin-care-info">
 								<span class = "name"> Cleanser </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -90,7 +86,7 @@
 
 							<div class = "skin-care-info">
 								<span class = "name"> Toner </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -100,17 +96,17 @@
 
 							<div class = "skin-care-info">
 								<span class = "name"> Serum </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
 
 						<div class = "skin-care-box">
-							<img src = "images/skin-care/moisturizer-2.jpg" alt = "moisturizer" />
+							<img src = "images/skin-care/moisturizer.jpg" alt = "moisturizer" />
 
 							<div class = "skin-care-info">
 								<span class = "name"> Moisturizer </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -120,7 +116,7 @@
 
 							<div class = "skin-care-info">
 								<span class = "name"> Sunscreen </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -129,6 +125,17 @@
 			</section>
 		<!--skin care ends-->
 
+		<!--banner two-->
+			<section class = "banner-two">
+				<div class = "container">
+					<div class = "banner-two-text">
+						<h1> For Her & Her's </h1>
+						<h2> Tried & tested for best results </h2>
+					</div>
+				</div>
+			</section>
+		<!--banner two ends-->
+
 		<!--beauty-->
 			<section class = "beauty">
 				<div class = "container">
@@ -136,11 +143,11 @@
 
 					<div class = "beauty-container">
 						<div class = "beauty-box">
-							<img src = "https://i.ibb.co/RpHv1XWt/image.png" alt = "lipstick" />
+							<img src = "images/beauty/lipstick.png" alt = "lipstick" />
 
 							<div class = "beauty-info">
 								<span class = "name"> Lipstick </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -150,7 +157,7 @@
 
 							<div class = "beauty-info">
 								<span class = "name"> Foundation </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -160,7 +167,7 @@
 
 							<div class = "beauty-info">
 								<span class = "name"> Mascara </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -170,7 +177,7 @@
 
 							<div class = "beauty-info">
 								<span class = "name"> Eyeshadow </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -180,7 +187,7 @@
 
 							<div class = "beauty-info">
 								<span class = "name"> Body Lotion </span>
-								<span class = "price"> Ksh 500 /- </span>
+								<span class = "price"> Ksh 2,500 /- </span>
 								<button> Add </button>
 							</div>
 						</div>
@@ -193,17 +200,18 @@
 			<section class = "guarantee">
 				<div class = "container">
 					<div class = "guarantee-box">
-						<img src = "images/logo.png" alt = "She Cares Logo" /> GUARANTEED TO MEET YOUR SKIN & BODY NEEDS
+						<img src = "images/work/heart.png" alt = "logo" /> 
+						<span> GUARANTEED TO MEET YOUR SKIN & BODY NEEDS </span>
 					</div>
 				</div>
 			</section>
 		<!--guarantee ends-->
 
 		<!--footer-->
-			<section class = "footer-cover">
+			<section class = "footer">
 				<div class = "container">
 					<div class = "footer-container">
-						<div class = "footer-box con">
+						<div class = "footer-box">
 							<h1 class = "footer-title"> Contact Us </h1>
 
 							<span> <img src = "images/work/phone.png" alt = "phone" /> +254700111222 </span>
@@ -211,23 +219,31 @@
 							<span> <img src = "images/work/address.png" alt = "address" /> Nairobi </span>
 						</div>
 
-						<div class = "footer-box con">
+						<div class = "footer-box">
 							<h1 class = "footer-title"> Follow Us </h1>
 
-							<span> <img src = "images/work/tiktok.png" alt = "tiktok" /> <a href = ""> TikTok </a> </span>
-							<span> <img src = "images/work/instagram.png" alt = "instagram" /> <a href = ""> Instagram </a> </span>
-							<span> <img src = "images/work/facebook.png" alt = "facebook" /> <a href = ""> Facebook </a> </span>
+							<span> 
+								<img src = "images/work/tiktok.png" alt = "tiktok" /> <a href = ""> TikTok </a> 
+							</span>
+
+							<span> 
+								<img src = "images/work/instagram.png" alt = "instagram" /> <a href = ""> Instagram </a> 
+							</span>
+
+							<span> 
+								<img src = "images/work/facebook.png" alt = "facebook" /> <a href = ""> Facebook </a> 
+							</span>
 						</div>
 					</div>
 
 					<footer>
-						<p style = "margin-top: 10px"> &copy; She Cares , <span id = "year"></span> </p>
+						<p> &copy; She Cares , <span id = "year"></span> </p>
 					</footer>
 
-					<hr style = "color: white;" />
+					<hr  />
 
-					<p style = "text-align: center; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);"> 
-						Designed by <a href = "" style = "text-decoration: none; color: white;"> Michael Chan </a> 
+					<p class = "designer"> 
+						Designed by <a href = ""> Michael Chan </a> 
 					</p>
 				</div>
 			</section>
@@ -235,15 +251,6 @@
 
 		<!--javascript-->
 			<script>
-				const banners = document.querySelectorAll('.banner');
-			  let current = 0;
-
-			  setInterval(() => {
-			    banners[current].classList.remove('active');
-			    current = (current + 1) % banners.length;
-			    banners[current].classList.add('active');
-			  }, 5000); // change every 5 seconds
-
 				document.getElementById("year").textContent = new Date().getFullYear();
 			</script>
 		<!--javascript ends-->
